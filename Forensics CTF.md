@@ -61,7 +61,9 @@ apt-get install aircrack-ng
 [USBRip](https://github.com/snovvcrash/usbrip) - Simple CLI forensics tool for tracking USB device artifacts (history of USB events) on GNU/Linux
 
 ### Registry Viewers
+
 [OfflineRegistry View](https://www.nirsoft.net/utils/offline_registry_view.html) - Simple tool for Windows that allows you to read offline Registry files from external drive and view the desired Registry key in .reg file format.
+
 [Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0) - Used to view Windows registries.
 
 ### Extract NTFS Filesystem
