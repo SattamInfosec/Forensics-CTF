@@ -8,7 +8,7 @@ Try `file` comamnd on the image to learn more information.
 
 To extract data inside Image files.
 
-Try file carve using `foremost <filename>` command. Foremost support all files. But it takes time to extract all file when you face a big size file.
+
 
 ```
 > $ zsteg <FILE_NAME>
@@ -41,6 +41,16 @@ Binwalk helps to find data inside the image or sometimes if binwalk reports as z
 ```
 > $ binwalk <IMAGE_NAME>
 ```
+
+### File Carving
+
+process used in computer forensics to extract data from a disk drive or other storage device without the assistance of the file system that originality created the file
+
+[dd](https://man7.org/linux/man-pages/man1/dd.1.html) - Copy a file, converting and formatting according to the operands.
+
+Try file carve using `foremost <filename>` command. Foremost support all files. But it takes time to extract all file when you face a big size file.
+
+[HXD](https://mh-nexus.de/en/hxd/) - user-friendly hex editor that allows you to perform low-level editing and modifying of a raw disk or main memory (RAM)
 
 ### Network Analysis
 
