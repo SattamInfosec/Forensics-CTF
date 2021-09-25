@@ -1,6 +1,6 @@
 # Forensics
 
-## Tools used for solving Forensics challenges
+### Tools used for solving Forensics challenges
 
 ### Image File
 
@@ -49,17 +49,20 @@ Used to analyze pcap or pcapng files
 ```
 > $ wireshark <FILE_NAME>.pcapng
 ```
-Aircrack-Ng tool: Crack 802.11 WEP and WPA-PSK keys
+[NetworkMiner](https://www.netresec.com/index.ashx?page=NetworkMiner) -  Network Forensic Analysis Tool used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports
+
+[Aircrack-NG Tool](https://www.aircrack-ng.org/): Crack 802.11 WEP and WPA-PSK keys
 ```
 apt-get install aircrack-ng
 ```
 
 ### USB
 
-[USBRip](https://github.com/snovvcrash/usbrip)-Simple CLI forensics tool for tracking USB device artifacts (history of USB events) on GNU/Linux
+[USBRip](https://github.com/snovvcrash/usbrip) - Simple CLI forensics tool for tracking USB device artifacts (history of USB events) on GNU/Linux
 
 ### Registry Viewers
-
+[OfflineRegistry View](https://www.nirsoft.net/utils/offline_registry_view.html) - Simple tool for Windows that allows you to read offline Registry files from external drive and view the desired Registry key in .reg file format.
+[Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0) - Used to view Windows registries.
 
 ### Extract NTFS Filesystem
 
@@ -84,17 +87,77 @@ To Recover Files from Deleted File Systems from Remote Hosts.
 > $ binwalk -Me extract.dd
 ```
 
+### Memory Forensics 
+
+Tool for investigate memory dump
+
+```
+[volatility](https://github.com/volatilityfoundation/volatility) - extraction of digital artifacts from volatile memory (RAM) samples
+
+[WindowsSCOPE](http://www.windowsscope.com/) - which enables memory forensics for Windows computers
+```
+### Audio forensics
+
+To Extract Data from Audio File 
+
+```
+[Audacity](https://sourceforge.net/projects/audacity/) -  checking integrity, improving speech clarity, transcribing dialogue
+```
 
 
 
 
+### Zip Password Cracking
 
+To extract ZIP password, Use tool `fcrackzip` OR `zip2john`
 
+```
+> $2john <File-Name>. > <Name>.txt
+
+> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+### Rar Password Cracking 
+
+To extract Rar password, Use tool `rar2john`
+
+```
+> $2john <File-Name>. > <Name>.txt
+
+> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+```
+
+### Pdf Password Cracking 
+
+To extract Pdf password, use tool `pdf2john`
+
+```
+> $2john <File-Name>. > <Name>.txt
+
+> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+```
 
 ### 7z Password Cracking
 
 To extract 7z password, Use tool `7z2john`
 
+```
+> $7z2john <File-Name>.7z > <Name>.7z
+
+> $john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+```
+
 ### SSH Password Cracking
 
 To crack encrypted ssh key use `ssh2john` tool
+
+```
+> $ssh2john id_rsa > id_rsa.txt
+
+> $john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+> $ssh -i id_rsa <Username>@<IP-Address>
+   :Enter the Password Cracked 
+```
