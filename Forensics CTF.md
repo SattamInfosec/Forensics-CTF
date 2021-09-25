@@ -33,7 +33,7 @@ To extract data hidden inside an image file protected with password.
 ```
 Verifies the integrity of PNG and dump all of the chunk-level information in human-readable form
 ```
-> $pngcheck -cvt <FILE_NAME>.png
+> $ pngcheck -cvt <FILE_NAME>.png
 ```
 ### Binwalk
 
@@ -125,18 +125,18 @@ To Extract Data from Audio File
 To extract ZIP password, Use tool `fcrackzip` OR `zip2john`
 
 ```
-> $zip2john <File-Name>.zip > <Name>.txt
-
-> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+> $ zip2john <File-Name>.zip > <Name>.txt
+ 
+> $ john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 ### Rar Password Cracking 
 
 To extract Rar password, Use tool `rar2john`
 
 ```
-> $rar2john <File-Name>.rar > <Name>.txt
+> $ rar2john <File-Name>.rar > <Name>.txt
 
-> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+> $ john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
 ```
 
@@ -145,9 +145,9 @@ To extract Rar password, Use tool `rar2john`
 To extract Pdf password, use tool `pdf2john`
 
 ```
-> $pdf2john <File-Name>.pdf > <Name>.txt
+> $ pdf2john <File-Name>.pdf > <Name>.txt
 
-> $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
+> $ john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
 ```
 
@@ -156,9 +156,9 @@ To extract Pdf password, use tool `pdf2john`
 To extract 7z password, Use tool `7z2john`
 
 ```
-> $7z2john <File-Name>.7z > <Name>.7z
+> $ 7z2john <File-Name>.7z > <Name>.7z
 
-> $john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
+> $ john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
 ```
 
@@ -167,10 +167,10 @@ To extract 7z password, Use tool `7z2john`
 To crack encrypted ssh key use `ssh2john` tool
 
 ```
-> $ssh2john id_rsa > id_rsa.txt
+> $ ssh2john id_rsa > id_rsa.txt
 
-> $john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
+> $ john id_rsa.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
-> $ssh -i id_rsa <Username>@<IP-Address>
+> $ ssh -i id_rsa <Username>@<IP-Address>
    :Enter the Password Cracked 
 ```
