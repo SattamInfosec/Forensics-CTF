@@ -33,7 +33,7 @@ To extract data hidden inside an image file protected with password.
 ```
 Verifies the integrity of PNG and dump all of the chunk-level information in human-readable form
 ```
-pngcheck -cvt <FILE_NAME>.png
+> $pngcheck -cvt <FILE_NAME>.png
 ```
 ### Binwalk
 
