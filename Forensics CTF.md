@@ -8,7 +8,7 @@ Try `file` comamnd on the image to learn more information.
 
 To extract data inside Image files.
 
-Try file carve using 'foremost <filename>' command. Foremost support all files. But it takes time to extract all file when you face a big size file.
+Try file carve using `foremost <filename>` command. Foremost support all files. But it takes time to extract all file when you face a big size file.
 
 ```
 > $ zsteg <FILE_NAME>
