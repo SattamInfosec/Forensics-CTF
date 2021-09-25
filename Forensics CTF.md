@@ -49,9 +49,10 @@ Used to analyze pcap or pcapng files
 ```
 > $ wireshark <FILE_NAME>.pcapng
 ```
+
 [NetworkMiner](https://www.netresec.com/index.ashx?page=NetworkMiner) -  Network Forensic Analysis Tool used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports
 
-[Aircrack-NG Tool](https://www.aircrack-ng.org/): Crack 802.11 WEP and WPA-PSK keys
+[Aircrack-NG Tool](https://www.aircrack-ng.org/) - Crack 802.11 WEP and WPA-PSK keys
 ```
 apt-get install aircrack-ng
 ```
