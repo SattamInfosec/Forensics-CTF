@@ -1,6 +1,6 @@
 # Forensics
 
-Tools used for solving Forensics challenges
+## Tools used for solving Forensics challenges
 
 ### Image File
 
@@ -42,7 +42,7 @@ Binwalk helps to find data inside the image or sometimes if binwalk reports as z
 > $ binwalk <IMAGE_NAME>
 ```
 
-###Network Analysis
+### Network Analysis
 
 Used to analyze pcap or pcapng files
 
@@ -54,11 +54,11 @@ Aircrack-Ng tool: Crack 802.11 WEP and WPA-PSK keys
 apt-get install aircrack-ng
 ```
 
-###USB
-```
+### USB
+
 [USBRip](https://github.com/snovvcrash/usbrip)-Simple CLI forensics tool for tracking USB device artifacts (history of USB events) on GNU/Linux
-```
-###Registry Viewers
+
+### Registry Viewers
 
 
 ### Extract NTFS Filesystem
