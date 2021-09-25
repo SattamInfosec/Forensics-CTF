@@ -93,18 +93,18 @@ To Recover Files from Deleted File Systems from Remote Hosts.
 
 Tool for investigate memory dump
 
-```
+
 [volatility](https://github.com/volatilityfoundation/volatility) - extraction of digital artifacts from volatile memory (RAM) samples
 
 [WindowsSCOPE](http://www.windowsscope.com/) - which enables memory forensics for Windows computers
-```
+
 ### Audio forensics
 
 To Extract Data from Audio File 
 
-```
+
 [Audacity](https://sourceforge.net/projects/audacity/) -  checking integrity, improving speech clarity, transcribing dialogue
-```
+
 
 
 
@@ -114,7 +114,7 @@ To Extract Data from Audio File
 To extract ZIP password, Use tool `fcrackzip` OR `zip2john`
 
 ```
-> $2john <File-Name>. > <Name>.txt
+> $zip2john <File-Name>.zip > <Name>.txt
 
 > $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
@@ -123,7 +123,7 @@ To extract ZIP password, Use tool `fcrackzip` OR `zip2john`
 To extract Rar password, Use tool `rar2john`
 
 ```
-> $2john <File-Name>. > <Name>.txt
+> $rar2john <File-Name>.rar > <Name>.txt
 
 > $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
@@ -134,7 +134,7 @@ To extract Rar password, Use tool `rar2john`
 To extract Pdf password, use tool `pdf2john`
 
 ```
-> $2john <File-Name>. > <Name>.txt
+> $pdf2john <File-Name>.pdf > <Name>.txt
 
 > $john <Name>.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
